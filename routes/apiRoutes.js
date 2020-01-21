@@ -1,14 +1,14 @@
 var db = require("../models");
 
 module.exports = function(app) {
-  // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+  // Get all items
+  app.get("/api/items", function(req, res) {
+    db.Items.findAll({}).then(function(dbItems) {
+      res.json(dbItems);
     });
   });
 
-  // Create a new example
+  /* Create a new example
   app.post("/api/examples", function(req, res) {
     db.Example.create(req.body).then(function(dbExample) {
       res.json(dbExample);
@@ -20,5 +20,5 @@ module.exports = function(app) {
     db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
       res.json(dbExample);
     });
-  });
+  }); */
 };
