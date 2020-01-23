@@ -46,7 +46,7 @@ db.sequelize.sync(syncOptions).then(function() {
       PORT,
       PORT
     );
-//todo
+    //todo
     db.Items.bulkCreate([
       {
         item: "chefs selection for 2",
@@ -89,6 +89,15 @@ db.sequelize.sync(syncOptions).then(function() {
         price: 16,
         url:
           "https://images.unsplash.com/photo-1529566652340-2c41a1eb6d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+        category: "entree",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        item: "oysters kilpatrick",
+        price: 18,
+        url:
+          "https://images.unsplash.com/photo-1577004686904-1a4f118acf61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         category: "entree",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -139,6 +148,15 @@ db.sequelize.sync(syncOptions).then(function() {
         updatedAt: new Date()
       },
       {
+        item: "chicken pizza with carmelised red onion",
+        price: 24,
+        url:
+          "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        category: "main",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
         item: "cookies and cream",
         price: 12,
         url:
@@ -184,6 +202,15 @@ db.sequelize.sync(syncOptions).then(function() {
         updatedAt: new Date()
       },
       {
+        item: "salted caramel lava cake",
+        price: 14,
+        url:
+          "https://images.unsplash.com/photo-1511911063855-2bf39afa5b2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        category: "dessert",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
         item: "champagne moet and chandon",
         price: 19,
         url:
@@ -224,6 +251,15 @@ db.sequelize.sync(syncOptions).then(function() {
         price: 12,
         url:
           "https://images.unsplash.com/photo-1577933747985-857c73495486?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        category: "drinks",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        item: "chameleon cabernet sauvigon merlot",
+        price: 15,
+        url:
+          "https://images.unsplash.com/photo-1568907047661-1492520913f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         category: "drinks",
         createdAt: new Date(),
         updatedAt: new Date()
