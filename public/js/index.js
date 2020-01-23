@@ -1,30 +1,30 @@
 // Get references to page elements
-var $itemsTitle = $("#items-title");
+var $itemsItem = $("#items-item");
 var $itemsPrice = $("#items-price");
 var $itemsURL = $("#items-url");
 var $itemsCategory = $("#items-category");
 
 // The API object contains methods for each kind of request we'll make
 var API = {
-  saveExample: function(example) {
+  saveItems: function(item) {
     return $.ajax({
       headers: {
         "Content-Type": "application/json"
       },
       type: "POST",
-      url: "api/examples",
-      data: JSON.stringify(example)
+      url: "api/items",
+      data: JSON.stringify(item)
     });
   },
-  getExamples: function() {
+  getItems: function() {
     return $.ajax({
-      url: "api/examples",
+      url: "api/items",
       type: "GET"
     });
   },
-  deleteExample: function(id) {
+  deleteItems: function(id) {
     return $.ajax({
-      url: "api/examples/" + id,
+      url: "api/items/" + id,
       type: "DELETE"
     });
   }
