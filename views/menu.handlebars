@@ -1,191 +1,47 @@
-{{> header }}
+<!--menu -->
+{{> header}}
 
-<!--Entrees-->
-<div class="container max-w-4xl mx-auto text-center flex flex-wrap items-start md:flex-no-wrap">
-
-  {{#each food}}
-  <!-- <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
-    <img
-      src="https://images.unsplash.com/photo-1529566652340-2c41a1eb6d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-      class="w-full h-48 object-cover mb-6" /> -->
-
-  <h2 class="text-xl leading-tight mb-2">{{this.item}}</h2>
-  <!--Entree1-->
-  <p class="mt-3 mx-auto text-sm leading-normal">{{this.price}}</p>
-
-  <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
-    <p class="w-full h-48 object-cover mb-6"><img src={{this.url}}></p>
-
-    <!--Do we need to add an order button for each item -->
-  </div>
-  {{/each}}
-  {{!-- <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
-    <img
-      src="https://images.unsplash.com/photo-1464093515883-ec948246accb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      class="w-full h-48 object-cover mb-6" />
-
-    <h2 class="text-xl leading-tight mb-2">Entree2</h2>
-    <p class="mt-3 mx-auto text-sm leading-normal">$----</p>
-  </div>
-
-  <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
-    <img
-      src="https://images.unsplash.com/photo-1577004686904-1a4f118acf61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      class="w-full h-48 object-cover mb-6" />
-
-    <h2 class="text-xl leading-tight mb-2">Entree3</h2>
-    <p class="mt-3 mx-auto text-sm leading-normal">$----</p>
-  </div>
-  <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
-    <img
-      src="https://images.unsplash.com/photo-1572966431862-38b9dd0e397f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      class="w-full h-48 object-cover mb-6" />
-
-    <h2 class="text-xl leading-tight mb-2">Entree4</h2>
-    <p class="mt-3 mx-auto text-sm leading-normal">$----</p>
-  </div>
-  <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
-    <img
-      src="https://images.unsplash.com/photo-1571770110109-46c4d1cfcd21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      class="w-full h-48 object-cover mb-6" />
-
-    <h2 class="text-xl leading-tight mb-2">Entree5</h2>
-    <p class="mt-3 mx-auto text-sm leading-normal">$----</p>
-  </div>
-</div>
-
-<!--Mains-->
-<div class="container max-w-4xl mx-auto text-center flex flex-wrap items-start md:flex-no-wrap">
-
-  <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
-    <img
-      src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      class="w-full h-48 object-cover mb-6" />
-
-    <h2 class="text-xl leading-tight mb-2">Main1</h2>
-    <p class="mt-3 mx-auto text-sm leading-normal">Duis aute irure dolor in reprehenderit in voluptate velit
-      esse
-      cillum dolore eu fugiat nulla pariatur.</p>
-  </div>
-
-  <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
-    <img
-      src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
-      class="w-full h-48 object-cover mb-6" />
-
-    <h2 class="text-xl leading-tight mb-2">Main2</h2>
-    <p class="mt-3 mx-auto text-sm leading-normal">Duis aute irure dolor in reprehenderit in voluptate velit
-      esse
-      cillum dolore eu fugiat nulla pariatur.</p>
-  </div>
-
-  <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
-    <img
-      src="https://images.unsplash.com/photo-1516100882582-96c3a05fe590?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      class="w-full h-48 object-cover mb-6" />
-
-    <h2 class="text-xl leading-tight mb-2">Main3</h2>
-    <p class="mt-3 mx-auto text-sm leading-normal">Duis aute irure dolor in reprehenderit in voluptate velit
-      esse
-      cillum dolore eu fugiat nulla pariatur.</p>
-  </div>
-  <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
-    <img
-      src="https://images.unsplash.com/photo-1535980156496-87fc2cfcb832?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      class="w-full h-48 object-cover mb-6" />
-
-    <h2 class="text-xl leading-tight mb-2">Main4</h2>
-    <p class="mt-3 mx-auto text-sm leading-normal">Duis aute irure dolor in reprehenderit in voluptate velit
-      esse
-      cillum dolore eu fugiat nulla pariatur.</p>
-  </div>
-  <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
-    <img
-      src="https://images.unsplash.com/photo-1568376794508-ae52c6ab3929?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      class="w-full h-48 object-cover mb-6" />
-
-    <h2 class="text-xl leading-tight mb-2">Main5</h2>
-    <p class="mt-3 mx-auto text-sm leading-normal">Duis aute irure dolor in reprehenderit in voluptate velit
-      esse
-      cillum dolore eu fugiat nulla pariatur.</p>
-  </div>
-</div>
-<!--Desserts-->
-<div class="container max-w-4xl mx-auto text-center flex flex-wrap items-start md:flex-no-wrap">
-
-  <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
-    <img
-      src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      class="w-full h-48 object-cover mb-6" />
-
-    <h2 class="text-xl leading-tight mb-2">Dessert1</h2>
-    <p class="mt-3 mx-auto text-sm leading-normal">Duis aute irure dolor in reprehenderit in voluptate velit
-      esse
-      cillum dolore eu fugiat nulla pariatur.</p>
-  </div>
-
-  <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
-    <img
-      src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      class="w-full h-48 object-cover mb-6" />
-
-    <h2 class="text-xl leading-tight mb-2">Dessert2</h2>
-    <p class="mt-3 mx-auto text-sm leading-normal">Duis aute irure dolor in reprehenderit in voluptate velit
-      esse
-      cillum dolore eu fugiat nulla pariatur.</p>
-  </div>
-
-  <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
-    <img
-      src="https://images.unsplash.com/photo-1508737804141-4c3b688e2546?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=333&q=80"
-      class="w-full h-48 object-cover mb-6" />
-
-    <h2 class="text-xl leading-tight mb-2">Dessert3</h2>
-    <p class="mt-3 mx-auto text-sm leading-normal">Duis aute irure dolor in reprehenderit in voluptate velit
-      esse
-      cillum dolore eu fugiat nulla pariatur.</p>
-  </div>
-  <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
-    <img
-      src="https://images.unsplash.com/photo-1543255006-d6395b6f1171?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      class="w-full h-48 object-cover mb-6" />
-
-    <h2 class="text-xl leading-tight mb-2">Dessert4</h2>
-    <p class="mt-3 mx-auto text-sm leading-normal">Duis aute irure dolor in reprehenderit in voluptate velit
-      esse
-      cillum dolore eu fugiat nulla pariatur.</p>
-  </div>
-  <div class="my-4 w-full md:w-1/3 flex flex-col items-center justify-center px-4">
-    <img
-      src="https://images.unsplash.com/photo-1472555794301-77353b152fb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      class="w-full h-48 object-cover mb-6" />
-
-    <h2 class="text-xl leading-tight mb-2">Dessert5</h2>
-    <p class="mt-3 mx-auto text-sm leading-normal">Duis aute irure dolor in reprehenderit in voluptate velit
-      esse
-      cillum dolore eu fugiat nulla pariatur.</p>
-  </div>
-</div>
-
-<!-- /home content -->
-
-<!-- /Drinks -->
+<!--Order-->
 <div class="w-full px-6 py-12 text-left bg-gray-300 text-gray-700 leading-normal">
   <div class="container max-w-4xl mx-auto flex justify-center flex-wrap md:flex-no-wrap">
     <div class="w-full md:w-1-3">
       <h3 class="text-3xl mb-8 text-black leading-tight">
-        Drinks
+        <!--Placeholder for order -->
+
       </h3>
-
-      <p class="mb-5">Wine</p>
-      <p class="mb-5">Beer</p>
-      <p class="mb-5">Spirits</p>
-
-    </div>
-    <div class="w-full md:w-2-3 pt-10 md:px-6 md:pt-0">
-      <img
-        src="https://images.unsplash.com/photo-1547595628-c61a29f496f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
-        class="w-full h-64 object-cover mb-6" />
     </div>
   </div>
-</div> --}}
+</div>
+
+{{#each food}}
+<div class="flex mb-4">
+  {{#each this}}
+  <div class="w-1/3 max-w-md bg-white border rounded-lg overflow-hidden style">
+    <div class="relative bg-white" style="pb-2/3">
+      <img src={{ this.dataValues.url }} class="absolute h-48 w-48 object-cover mb-6" />
+      <div class="p-6">
+        <div class="flex">
+          <span
+            class="inline-block bg-teal-200 text-teal-800 text-xs uppercase font-semibold tracking-wide px-2 rounded-full">{{ this.dataValues.category }}
+          </span>
+        </div>
+        <h4 class="ml-2 text-gray-700 text-xl font-semibold leading-tight">{{ this.dataValues.item }}</h4>
+        <div class="mt-1">
+          $ {{this.dataValues.price}}
+        </div>
+        <div class="mt-4">
+          <button
+            class="bg-transparent hover:bg-teal-500 text-s text-teal-600 font-semibold hover:text-white py-1 px-3 border border-teal-500 hover:border-transparent rounded">
+            Order
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
+{{/each}}
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>

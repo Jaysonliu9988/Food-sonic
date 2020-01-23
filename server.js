@@ -46,111 +46,221 @@ db.sequelize.sync(syncOptions).then(function() {
       PORT,
       PORT
     );
-
+    //todo
     db.Items.bulkCreate([
       {
-        item: "Bachi Burger",
-        price: 1,
-        url: "https://images.unsplash.com/photo-1577004686904-1a4f118acf61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        item: "chefs selection for 2",
+        price: 24,
+        url:
+          "https://images.unsplash.com/photo-1529566652340-2c41a1eb6d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
         category: "entree",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        item: "Brindle Burger",
+        item: "prawn delight",
+        price: 18,
+        url:
+          "https://images.unsplash.com/photo-1464093515883-ec948246accb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        category: "entree",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        item: "tuna with fragrant rice",
+        price: 14,
+        url:
+          "https://images.unsplash.com/photo-1529566652340-2c41a1eb6d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+        category: "entree",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        item: "oysters kilpatrick",
+        price: 18,
+        url:
+          "https://images.unsplash.com/photo-1577004686904-1a4f118acf61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        category: "entree",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        item: "beef carpaccio",
+        price: 16,
+        url:
+          "https://images.unsplash.com/photo-1529566652340-2c41a1eb6d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+        category: "entree",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        item: "oysters kilpatrick",
+        price: 18,
+        url:
+          "https://images.unsplash.com/photo-1577004686904-1a4f118acf61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        category: "entree",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        item: "chicken pizza with carmelised red onion",
+        price: 24,
+        url:
+          "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        category: "main",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        item: "oven-steamed salmon on a bed of aromatic vegetables",
+        price: 36,
+        url:
+          "https://images.unsplash.com/photo-1577004686904-1a4f118acf61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        category: "main",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        item: "pasta in tomato sauce",
+        price: 23,
+        url:
+          "https://images.unsplash.com/photo-1529566652340-2c41a1eb6d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+        category: "main",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        item: "spicy octopus with potatoes",
+        price: 34,
+        url:
+          "https://images.unsplash.com/photo-1529566652340-2c41a1eb6d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+        category: "main",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        item: "scotch fillet with seasonal vegetables",
+        price: 42,
+        url:
+          "https://images.unsplash.com/photo-1577004686904-1a4f118acf61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        category: "main",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        item: "chicken pizza with carmelised red onion",
+        price: 24,
+        url:
+          "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        category: "main",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        item: "cookies and cream",
         price: 12,
-        url: "https://images.unsplash.com/photo-1529566652340-2c41a1eb6d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
-        category: "entree",
+        url:
+          "https://images.unsplash.com/photo-1529566652340-2c41a1eb6d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+        category: "dessert",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        item: "Americana Burger",
-        entree: 1,
+        item: "chocolate overflow",
+        price: 14,
+        url:
+          "https://images.unsplash.com/photo-1529566652340-2c41a1eb6d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+        category: "dessert",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        item: "The Company Burger",
-        entree: 1,
+        item: "chocolate tart",
+        price: 14,
+        url:
+          "https://images.unsplash.com/photo-1577004686904-1a4f118acf61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        category: "dessert",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        item: "The Counter Burger",
-        entree: 1,
+        item: "salted caramel lava cake",
+        price: 14,
+        url:
+          "https://images.unsplash.com/photo-1511911063855-2bf39afa5b2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        category: "dessert",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        item: "The Emmy Burger",
-        entree: 1,
+        item: "mango and cherry pavlova",
+        price: 14,
+        url:
+          "https://images.unsplash.com/photo-1549541238-00a925f38455?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        category: "dessert",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        item: "Classic Burger",
-        entree: 1,
+        item: "salted caramel lava cake",
+        price: 14,
+        url:
+          "https://images.unsplash.com/photo-1511911063855-2bf39afa5b2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        category: "dessert",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        item: "Husk Burger",
-        entree: 1,
+        item: "champagne moet and chandon",
+        price: 19,
+        url:
+          "https://images.unsplash.com/photo-1531821945121-d55c446bd62f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        category: "drinks",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        item: "Velveeta Burger",
-        entree: 1,
+        item: "yering station chardonnay",
+        price: 14,
+        url:
+          "https://images.unsplash.com/photo-1551622966-357737ef2797?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        category: "drinks",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        item: "Kua Aina Burger",
-        entree: 1,
+        item: "famille sumeire rose",
+        price: 12,
+        url:
+          "https://images.unsplash.com/photo-1546553295-2cb31e5db3b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        category: "drinks",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        item: "Waffle Fries",
-        entree: 0,
+        item: "chameleon cabernet sauvigon merlot",
+        price: 15,
+        url:
+          "https://images.unsplash.com/photo-1568907047661-1492520913f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        category: "drinks",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        item: "Onion Rings",
-        entree: 0,
+        item: "grahams port tawny",
+        price: 12,
+        url:
+          "https://images.unsplash.com/photo-1577933747985-857c73495486?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        category: "drinks",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        item: "Cole Slaw & House Fries",
-        entree: 0,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        item: "Chocolate Mint Milk Shake",
-        entree: 0,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        item: "Vanilla Milk Shake",
-        entree: 0,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        item: "Blackberry Milk Shake",
-        entree: 0,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        item: "Cookes and Cream Milk Shake",
-        entree: 0,
+        item: "cognac",
+        price: 15,
+        url:
+          "https://images.unsplash.com/photo-1579369542406-f30da2de34ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        category: "drinks",
         createdAt: new Date(),
         updatedAt: new Date()
       }
