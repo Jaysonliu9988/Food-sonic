@@ -52,7 +52,7 @@ db.sequelize.sync(syncOptions).then(function() {
         item: "chefs selection for 2",
         price: 24,
         url:
-          "https://images.unsplash.com/photo-1577004686904-1a4f118acf61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+          "https://images.unsplash.com/photo-1529566652340-2c41a1eb6d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
         category: "entree",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -61,7 +61,7 @@ db.sequelize.sync(syncOptions).then(function() {
         item: "prawn delight",
         price: 18,
         url:
-          "https://images.unsplash.com/photo-1529566652340-2c41a1eb6d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+          "https://images.unsplash.com/photo-1464093515883-ec948246accb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         category: "entree",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -256,10 +256,10 @@ db.sequelize.sync(syncOptions).then(function() {
         updatedAt: new Date()
       },
       {
-        item: "chameleon cabernet sauvigon merlot",
+        item: "cognac",
         price: 15,
         url:
-          "https://images.unsplash.com/photo-1568907047661-1492520913f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+          "https://images.unsplash.com/photo-1579369542406-f30da2de34ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         category: "drinks",
         createdAt: new Date(),
         updatedAt: new Date()
