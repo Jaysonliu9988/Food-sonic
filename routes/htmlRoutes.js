@@ -1,4 +1,5 @@
 var db = require("../models");
+var _ = require("lodash");
 
 module.exports = function(app) {
   // Load home page
@@ -6,43 +7,23 @@ module.exports = function(app) {
     db.Items.findAll({}).then(function(dbItems) {
       res.render("index", {
         title: "Food Sonic!",
-        category: dbItems
+        food: dbItems
       });
     });
   });
 
-  // Load menu page and pass in an item by title
-  app.get("/items/:item", function(req, res) {
-    db.Items.findOne({ where: { item: req.params.item } }).then(function(
-      dbItems
-    ) {
+
+
+  app.get("/items/all", function(req, res) {
+    db.Items.findAll({}).then(function(dbItems) {
+      chunkedData = _.chunk(dbItems, 3);
       res.render("menu", {
-        food: [dbItems.dataValues]
+        food: chunkedData
       });
     });
   });
 
-  // Load menu page and pass in an item by price
-  app.get("/items/ :price", function(req, res) {
-    db.Items.findOne({ where: { price: req.params.price } }).then(function(
-      dbItems
-    ) {
-      res.render("menu", {
-        food: [dbItems.dataValues]
-      });
-    });
-  });
-
-  // Load menu page and pass in an item url picture
-  app.get("/items/ :url", function(req, res) {
-    db.Items.findOne({ where: { url: req.params.url } }).then(function(
-      dbItems
-    ) {
-      res.render("menu", {
-        food: [dbItems.dataValues]
-      });
-    });
-  });
+  
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
