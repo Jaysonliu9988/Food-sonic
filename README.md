@@ -2,10 +2,10 @@
 
 ## Why Food Sonic
 
-This app is designed for the couple who want an intimate dinner experience dining in at Food Sonic.
-They can sit down at our Restaurant with an iPad at their table, browse the menu, see a visual of the food and drink options and order at their table.
-The kitchen will immediately receive a time stamped order to prepare the food and have the server deliver the order to the table.
-No printed menus.
+* This app is designed for the couple who want an intimate dinner experience dining in at Food Sonic.
+* They can sit down at our Restaurant with an iPad at their table, browse the menu, see a visual of the food and drink options and order at their table.
+* The kitchen will immediately receive a time stamped order to prepare the food and have the server deliver the order to the table.
+* No printed menus.
 
 ## Project Requirements
 ​
@@ -29,24 +29,24 @@ No printed menus.
 
 ## Technologies Used
 
-Node and Express Web Server
-MySQL and Sequelize
-Express Handlebars and partial templates
-Lodash
-Tailwind CSS
+* Node and Express Web Server
+* MySQL and Sequelize
+* Express Handlebars and partial templates
+* Lodash
+* Tailwind CSS
 
 ## Future Features
 
-Create sign up to restaurant newsletter
-Order a table online feature
-Move to online food ordering in the future
-Change to separate order screen
+* Create sign up to restaurant newsletter
+* Order a table online feature
+* Move to online food ordering in the future
+* Change to separate order screen
 
 ## Link to Live Environment
 
-https://git.heroku.com/project-2-foodie.git
+https://project-2-foodie.herokuapp.com/
 
 ## Team
-Janet Reid
-Jayson Liu
-Padraig O'Dowd
+* Janet Reid
+* Jayson Liu
+* Padraig O'Dowd
