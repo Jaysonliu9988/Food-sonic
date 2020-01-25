@@ -70,7 +70,7 @@ db.sequelize.sync(syncOptions).then(function() {
         item: "tuna with fragrant rice",
         price: 14,
         url:
-          "https://images.unsplash.com/photo-1529566652340-2c41a1eb6d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+          "https://images.unsplash.com/photo-1577004686904-1a4f118acf61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         category: "entree",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -79,7 +79,7 @@ db.sequelize.sync(syncOptions).then(function() {
         item: "oysters kilpatrick",
         price: 18,
         url:
-          "https://images.unsplash.com/photo-1577004686904-1a4f118acf61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+          "https://images.unsplash.com/photo-1572966431862-38b9dd0e397f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         category: "entree",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -88,16 +88,16 @@ db.sequelize.sync(syncOptions).then(function() {
         item: "beef carpaccio",
         price: 16,
         url:
-          "https://images.unsplash.com/photo-1529566652340-2c41a1eb6d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+          "https://images.unsplash.com/photo-1562967915-5ca331d76a50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         category: "entree",
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        item: "oysters kilpatrick",
+        item: "tomato bruschetta",
         price: 18,
         url:
-          "https://images.unsplash.com/photo-1577004686904-1a4f118acf61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+          "https://images.unsplash.com/photo-1506280754576-f6fa8a873550?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         category: "entree",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -112,10 +112,10 @@ db.sequelize.sync(syncOptions).then(function() {
         updatedAt: new Date()
       },
       {
-        item: "oven-steamed salmon on a bed of aromatic vegetables",
+        item: "salmon with onions and asparagus",
         price: 36,
         url:
-          "https://images.unsplash.com/photo-1577004686904-1a4f118acf61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+          "https://images.unsplash.com/photo-1560717845-968823efbee1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         category: "main",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -124,7 +124,7 @@ db.sequelize.sync(syncOptions).then(function() {
         item: "pasta in tomato sauce",
         price: 23,
         url:
-          "https://images.unsplash.com/photo-1529566652340-2c41a1eb6d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+          "https://images.unsplash.com/photo-1516100882582-96c3a05fe590?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         category: "main",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -133,7 +133,7 @@ db.sequelize.sync(syncOptions).then(function() {
         item: "spicy octopus with potatoes",
         price: 34,
         url:
-          "https://images.unsplash.com/photo-1529566652340-2c41a1eb6d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+          "https://images.unsplash.com/photo-1535980156496-87fc2cfcb832?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         category: "main",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -142,7 +142,7 @@ db.sequelize.sync(syncOptions).then(function() {
         item: "scotch fillet with seasonal vegetables",
         price: 42,
         url:
-          "https://images.unsplash.com/photo-1577004686904-1a4f118acf61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+          "https://images.unsplash.com/photo-1568376794508-ae52c6ab3929?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         category: "main",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -160,7 +160,7 @@ db.sequelize.sync(syncOptions).then(function() {
         item: "cookies and cream",
         price: 12,
         url:
-          "https://images.unsplash.com/photo-1529566652340-2c41a1eb6d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+          "https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         category: "dessert",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -169,7 +169,7 @@ db.sequelize.sync(syncOptions).then(function() {
         item: "chocolate overflow",
         price: 14,
         url:
-          "https://images.unsplash.com/photo-1529566652340-2c41a1eb6d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+          "https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         category: "dessert",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -178,7 +178,7 @@ db.sequelize.sync(syncOptions).then(function() {
         item: "chocolate tart",
         price: 14,
         url:
-          "https://images.unsplash.com/photo-1577004686904-1a4f118acf61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+          "https://images.unsplash.com/photo-1508737804141-4c3b688e2546?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         category: "dessert",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -202,10 +202,10 @@ db.sequelize.sync(syncOptions).then(function() {
         updatedAt: new Date()
       },
       {
-        item: "salted caramel lava cake",
-        price: 14,
+        item: "blueberry pie",
+        price: 12,
         url:
-          "https://images.unsplash.com/photo-1511911063855-2bf39afa5b2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+          "https://images.unsplash.com/photo-1476887334197-56adbf254e1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         category: "dessert",
         createdAt: new Date(),
         updatedAt: new Date()

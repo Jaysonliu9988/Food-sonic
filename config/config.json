@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "OliverHank6",
+    "password": "helloworld",
     "database": "menudb",
     "host": "localhost",
     "dialect": "mysql"
