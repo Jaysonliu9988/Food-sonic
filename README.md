@@ -1,12 +1,13 @@
-# Project2
+# Project2 - Food Sonic - Menu app
 
-# Project Requirements
-​
-This document outlines the base requirements for Project 2.
-​
-### Requirements
-​
-Your project must:
+## Why Food Sonic
+
+This app is designed for the couple who want an intimate dinner experience dining in at Food Sonic.
+They can sit down at our Restaurant with an iPad at their table, browse the menu, see a visual of the food and drink options and order at their table.
+The kitchen will immediately receive a time stamped order to prepare the food and have the server deliver the order to the table.
+No printed menus.
+
+## Project Requirements
 ​
 * Use a Node and Express Web Server;
 ​
@@ -26,4 +27,26 @@ Your project must:
 ​
 * Must not expose sensitive API key information on the server, see [Protecting-API-Keys-In-Node.md](../../../10-nodejs/03-Supplemental/Protecting-API-Keys-In-Node.md)
 
+## Technologies Used
+
+Node and Express Web Server
+MySQL and Sequelize
+Express Handlebars and partial templates
+Lodash
+Tailwind CSS
+
+## Future Features
+
+Create sign up to restaurant newsletter
+Order a table online feature
+Move to online food ordering in the future
+Change to separate order screen
+
+## Link to Live Environment
+
 https://git.heroku.com/project-2-foodie.git
+
+## Team
+Janet Reid
+Jayson Liu
+Padraig O'Dowd
