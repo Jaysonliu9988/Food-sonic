@@ -96,7 +96,7 @@ db.sequelize.sync(syncOptions).then(function() {
         updatedAt: new Date()
       },
       {
-        item: "chicken pizza with carmelised red onion",
+        item: "chicken pizza with caramelised red onion",
         price: 24,
         url:
           "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
@@ -141,10 +141,10 @@ db.sequelize.sync(syncOptions).then(function() {
         updatedAt: new Date()
       },
       {
-        item: "chicken pizza with carmelised red onion",
-        price: 24,
+        item: "raspberry peach glazed lamb",
+        price: 36,
         url:
-          "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+          "https://images.unsplash.com/photo-1514516345957-556ca7d90a29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
         category: "main",
         createdAt: new Date(),
         updatedAt: new Date()
