@@ -3,14 +3,14 @@ module.exports = function(sequelize, DataTypes) {
     itemID: DataTypes.INTEGER,
     quantity: DataTypes.INTEGER,
     tableID: DataTypes.INTEGER
-},
-{
-  classMethods: {
-    associate: function(models) {
-      table.belongsTo(models.table);
+  },
+  {
+    classMethods: {
+      associate: function(models) {
+        table.belongsTo(models.table);
+      }
     }
   }
-}
-);
+  );
   return Order;
 };
