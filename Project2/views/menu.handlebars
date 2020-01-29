@@ -1,0 +1,61 @@
+<!--menu -->
+{{> header}}
+
+<!--navigation-->
+<nav class="w-full bg-white md:pt-0 px-6 shadow-lg relative z-20 border-t border-b border-gray-400">
+  <div class="container mx-auto max-w-4xl md:flex justify-between items-center text-sm md:text-md md:justify-start">
+    <div
+      class="w-full md:w-1/2 text-center md:text-left py-4 flex flex-wrap justify-center items-stretch md:justify-start md:items-start">
+      <a href="/" class="px-2 md:pl-0 md:mr-3 md:pr-3 text-teal-700 hover:text-gray-900 no-underline text-lg">Home
+        Page</a>
+    </div>
+</nav>
+<!-- /navigation -->
+
+<!--Order-->
+<div class="w-full px-6 py-12 text-left bg-gray-100 text-gray-700 leading-normal">
+  <div class="container max-w-4xl mx-auto flex justify-center flex-wrap md:flex-no-wrap">
+    <div class="w-full md:w-1-3">
+      <h5 class="text-2xl mb-8 text-black leading-tight">
+        <!--Placeholder for order -->
+        <div id="total"><p class="text-right">Total: $<span>0.00</span></div>
+      </h5>
+      <h6>
+        <ul id="shopping-cart"></ul>
+      </h6>
+    </div>
+  </div>
+</div>
+
+{{#each food}}
+<div class="flex mb-4">
+  {{#each this}}
+  <div class="w-1/3 max-w-md bg-white border rounded-lg overflow-hidden style">
+    <div class="relative bg-white" style="pb-2/3">
+      <img src={{ this.dataValues.url }} class="h-48 w-48 object-cover m-6" />
+      <div class="p-6">
+        <div class="flex">
+          <span
+            class="inline-block bg-teal-200 text-teal-800 text-xs uppercase font-semibold tracking-wide px-2 rounded-full">{{ this.dataValues.category }}
+          </span>
+        </div>
+        <h4 class="item-name ml-2 text-gray-700 text-xl font-semibold leading-tight">{{ this.dataValues.item }}</h4>
+        <div class="mt-1">
+          $<span class="item-price">{{this.dataValues.price}}</span>
+        </div>
+        <div class="mt-4">
+          <button
+            class="order-button bg-transparent hover:bg-teal-500 text-s text-teal-600 font-semibold hover:text-white py-1 px-3 border border-teal-500 hover:border-transparent rounded">
+            Order
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
+{{/each}}
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
